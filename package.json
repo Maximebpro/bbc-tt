@@ -1,0 +1,40 @@
+{
+  "name": "bbc-tt",
+  "version": "1.0.0",
+  "description": "BBC Technical Test",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build --public-url . src/index.html",
+    "clean": "rimraf dist/index.html dist/src.*.css dist/src.*.js dist/src.*.map",
+    "predeploy": "npm run clean -s && npm run build -s",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximebpro/bbc-tt.git"
+  },
+  "keywords": [],
+  "author": "Maximebpro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximebpro/bbc-tt/issues"
+  },
+  "homepage": "https://github.com/Maximebpro/bbc-tt#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.0-module.beta.1",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rxjs": "^6.5.3"
+  }
+}
